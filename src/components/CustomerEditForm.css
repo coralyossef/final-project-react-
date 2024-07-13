@@ -1,0 +1,39 @@
+.customer-edit-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.customer-edit-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.customer-edit-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.customer-edit-form input, .customer-edit-form select, .customer-edit-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.customer-edit-form button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.customer-edit-form button:hover {
+    background-color: #0056b3;
+}

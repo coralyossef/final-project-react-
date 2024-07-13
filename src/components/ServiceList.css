@@ -1,0 +1,30 @@
+.service-list-container {
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+.service-list-title {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.service-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.service-list-table th, .service-list-table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.service-list-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.service-list-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

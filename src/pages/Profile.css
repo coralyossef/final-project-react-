@@ -1,0 +1,37 @@
+.profile-container {
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.profile-title {
+    text-align: center;
+    color: #007BFF; /* Blue color for title */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.profile-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-section p {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-section p:last-child {
+    border-bottom: none;
+}
