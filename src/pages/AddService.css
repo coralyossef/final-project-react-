@@ -3,15 +3,16 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff; 
 }
 
 .add-service-form {
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
+    max-width: 90%;
 }
 
 .add-service-form h2 {
@@ -20,18 +21,22 @@
     color: #007BFF;
 }
 
-.add-service-form input, .add-service-form select, .add-service-form button {
+.add-service-form input,
+.add-service-form select,
+.add-service-form button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 1em;
 }
 
 .add-service-form button {
     background-color: #007BFF;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .add-service-form button:hover {

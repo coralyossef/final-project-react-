@@ -1,42 +1,91 @@
 .customer-list-container {
-    padding: 20px;
-    background-color: #f0f8ff; /* Light blue background */
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+.customer-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .customer-list-title {
-    text-align: center;
-    color: #007BFF; /* Blue color for title */
-    margin-bottom: 20px;
+  margin: 0;
+  color: #007BFF;
 }
 
 .customer-type-filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .customer-type-filter select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  margin-right: 10px; 
+}
+
+.searchTerm {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  margin-right: 10px; 
+}
+
+.searchButton {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px; 
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+
+.button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+  margin-left: 5px; 
+  white-space: nowrap; 
+}
+
+.button:hover {
+  background-color: #0056b3;
 }
 
 .customer-list-table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.customer-list-table th, .customer-list-table td {
-    padding: 15px;
-    border: 1px solid #ccc;
-    text-align: left;
+.customer-list-table th,
+.customer-list-table td {
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
 .customer-list-table th {
-    background-color: #007BFF; /* Blue background for header */
-    color: white;
+  background-color: #007BFF;
+  color: white;
 }
 
 .customer-list-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }

@@ -10,8 +10,9 @@
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
+    max-width: 90%;
 }
 
 .service-form h2 {
@@ -20,18 +21,22 @@
     color: #007BFF;
 }
 
-.service-form input, .service-form select, .service-form button {
+.service-form input,
+.service-form select,
+.service-form button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 1em;
 }
 
 .service-form button {
     background-color: #007BFF;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .service-form button:hover {

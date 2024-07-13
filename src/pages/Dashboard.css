@@ -1,25 +1,28 @@
 .dashboard-container {
     padding: 20px;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff; 
 }
 
 .dashboard-header {
     text-align: center;
     margin-bottom: 20px;
-    color: #007BFF; /* Blue color for title */
+    color: #007BFF;
 }
 
 .dashboard-content {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .dashboard-section {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 45%;
+    margin: 10px;
 }
 
 .dashboard-list {
@@ -27,11 +30,11 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Adjust as needed */
+    justify-content: space-between;
 }
 
 .dashboard-card {
-    width: 45%; /* Adjust width as needed */
+    width: 45%;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -42,7 +45,7 @@
 
 .dashboard-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .dashboard-card h3 {

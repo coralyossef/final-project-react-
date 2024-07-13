@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
+import './ServiceList.css';
 import './CustomerList.css';
 
 const CustomerList = () => {
@@ -69,21 +70,25 @@ const CustomerList = () => {
 
     return (
         <div className="customer-list-container">
-            <h1 className="customer-list-title">Customer List</h1>
-            <div className="customer-list-controls">
-                <input 
-                    type="text" 
-                    placeholder="Search customers..." 
-                    value={search} 
-                    onChange={handleSearchChange} 
-                />
-                <select onChange={handleFilterChange} value={filter}>
+            <div className="customer-list-header">
+                <h1 className="customer-list-title">Customer List</h1>
+                <Link to="/add-customer" className="button">Add Customer</Link>
+            </div>
+            <div className="customer-type-filter">
+                <select onChange={handleFilterChange} value={filter} className="dropdownTerm">
                     <option value="">All</option>
                     <option value="private">Private</option>
                     <option value="business">Business</option>
                     <option value="institutional">Institutional</option>
                 </select>
-                <button onClick={handleSortOrderChange}>
+                <input 
+                    type="text" 
+                    placeholder="Search customers..." 
+                    value={search} 
+                    onChange={handleSearchChange}
+                    className="searchTerm"
+                />
+                <button onClick={handleSortOrderChange} className='searchButton'>
                     Sort by Last Name ({sortOrder === 'asc' ? 'Asc' : 'Desc'})
                 </button>
             </div>
@@ -111,8 +116,8 @@ const CustomerList = () => {
                             <td>{customer.customer_type}</td>
                             <td>{customer.user_type}</td>
                             <td>
-                                <Link to={`/customers/edit/${customer.id}`} className="edit-button">Edit</Link>
-                                <button onClick={() => handleDeleteCustomer(customer.id)} className="delete-button">Delete</button>
+                                <Link to={`/customers/edit/${customer.id}`} className="button">Edit</Link>
+                                <button onClick={() => handleDeleteCustomer(customer.id)} className="button">Delete</button>
                             </td>
                         </tr>
                     ))}

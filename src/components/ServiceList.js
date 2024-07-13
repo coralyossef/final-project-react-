@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { AuthContext } from '../context/AuthContext';
 import './ServiceList.css';
+import './CustomerList.css';
 
 const ServiceList = () => {
     const [services, setServices] = useState([]);
@@ -28,9 +29,7 @@ const ServiceList = () => {
         : services;
 
     const handleDeleteService = (id) => {
-
-        if (window.confirm('Are you sure you want to delete this customer?')) {
-            // Delete service API call
+        if (window.confirm('Are you sure you want to delete this service?')) {
             axios.delete(`http://127.0.0.1:5000/services/${id}`, {
                 auth: {
                     "username": user.user_name,
@@ -38,7 +37,6 @@ const ServiceList = () => {
             })
                 .then(response => {
                     alert('Service deleted successfully');
-                    // Refresh service list or update state after deletion
                     setServices(services.filter(service => service.id !== id));
                 })
                 .catch(error => {
@@ -46,17 +44,16 @@ const ServiceList = () => {
                     alert('Failed to delete service');
                 });
         }
-        
     };
 
     return (
         <div className="service-list-container">
             <div className="service-list-header">
                 <h1 className="service-list-title">Service List</h1>
-                <Link to="/add-service" className="add-service-button">Add Service</Link>
+                <Link to="/add-service" className="button">Add Service</Link>
             </div>
             <div className="service-type-filter">
-                <select onChange={handleFilterChange} value={filter}>
+                <select onChange={handleFilterChange} value={filter} className="dropdownTerm">
                     <option value="">All</option>
                     <option value="private">Private</option>
                     <option value="business">Business</option>
@@ -70,7 +67,7 @@ const ServiceList = () => {
                         <th>Description</th>
                         <th>Price</th>
                         <th>Customer Type</th>
-                        <th>Actions</th> {/* New column for actions */}
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,8 +78,8 @@ const ServiceList = () => {
                             <td>${service.price}</td>
                             <td>{service.customer_type}</td>
                             <td>
-                                <Link to={`/services/edit/${service.id}`} className="edit-button">Edit</Link>
-                                <button onClick={() => handleDeleteService(service.id)}>Delete</button>
+                                <Link to={`/services/edit/${service.id}`} className="button">Edit</Link>
+                                <button onClick={() => handleDeleteService(service.id)} className='button'>Delete</button>
                             </td>
                         </tr>
                     ))}
