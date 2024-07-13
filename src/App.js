@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CustomerList from './components/CustomerList';
 import ServiceList from './components/ServiceList';
 import RegisterForm from './components/RegisterForm';
@@ -11,14 +11,10 @@ import { AuthProvider } from './context/AuthContext';
 import Login from './components/Login';
 import ProtectedRoute from './components/ProtectedRoute';
 import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
 import NavBar from './components/NavBar';
-import ManagerRoute from './components/ManagerRoute';
 import OperatorRoute from './components/OperatorRoute';
-
-
 
 function App() {
   return (
@@ -27,6 +23,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<RegisterForm />} />
           <Route
             path="/"
             element={
@@ -65,12 +62,6 @@ function App() {
               <OperatorRoute>
                 <ServiceList />
               </OperatorRoute>
-            }
-          />
-          <Route
-            path="/register"
-            element={
-              <RegisterForm />
             }
           />
           <Route

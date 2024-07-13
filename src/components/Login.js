@@ -24,12 +24,15 @@ const Login = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="login-form">
-            <h2>Login</h2>
-            <input type="text" name="username" placeholder="Username" value={formData.username} onChange={handleChange} required />
-            <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
-            <button type="submit">Login</button>
-        </form>
+        <div className="login-container">
+            <form onSubmit={handleSubmit} className="login-form">
+                <h2>Login</h2>
+                <input type="text" name="username" placeholder="Username" value={formData.username} onChange={handleChange} required />
+                <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
+                <button type="submit">Login</button>
+                <button type="button" onClick={() => navigate('/register')}>Register</button>
+            </form>
+        </div>
     );
 };
 

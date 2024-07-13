@@ -1,12 +1,13 @@
 import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
+import { AuthContext } from '../context/AuthContext';
 import './Home.css'; // Import the CSS file for styling
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
 
 const Home = () => {
     const [customers, setCustomers] = useState([]);
     const [services, setServices] = useState([]);
+    const [filteredServices, setFilteredServices] = useState([]);
     const navigate = useNavigate();
     const { user } = useContext(AuthContext);
 
@@ -28,6 +29,13 @@ const Home = () => {
             });
     }, []);
 
+    useEffect(() => {
+        if (user) {
+            const filtered = services.filter(service => service.customer_type === user.customer_type);
+            setFilteredServices(filtered);
+        }
+    }, [services, user]);
+
     const handleCardClick = (path) => {
         navigate(path);
     };
@@ -39,7 +47,7 @@ const Home = () => {
                 <p>Manage your customers and services effectively</p>
             </header>
             <section className="home-content">
-                {user && (user.user_type === 'manager' || user.user_type == "operator") && (
+                {user && (user.user_type === 'manager' || user.user_type === 'operator') && (
                     <div className="home-section">
                         <h2>Customers</h2>
                         <ul className="home-list">
@@ -59,7 +67,7 @@ const Home = () => {
                 <div className="home-section">
                     <h2>Services</h2>
                     <ul className="home-list">
-                        {services.map(service => (
+                        {filteredServices.map(service => (
                             <li key={service.id}>
                                 <div className="home-card">
                                     <h3>{service.name}</h3>
