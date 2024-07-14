@@ -7,7 +7,7 @@ This is the frontend part of the Customer Management System built using React. T
 - [Project Description](#project-description)
 - [Features](#features)
 - [Screenshots](#screenshots)
-=- [Project Structure](#project-structure)
+- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
