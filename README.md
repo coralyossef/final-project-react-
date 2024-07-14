@@ -26,13 +26,13 @@ The Customer Management System is designed to streamline customer and service ma
 ### User Roles
 
 The system supports three distinct user roles, each with specific permissions and functionalities:
-- **Customer**:
+**Customer**:
 - Profile Management: Customers can manage and update their profiles.
 - Service Display: Customers can view services relevant to their type (private, business, or institutional).
-- **Manager**:
+**Manager**:
 - Customer Information: Managers can view and display detailed customer information.
 - Service Management: Managers can view all services related to the user type they manage (private, business, or institutional).
-- **Operator**:
+**Operator**:
 -  Database Management: Operators are responsible for managing the database, including adding, updating, and deleting customer and service records.
 -  Service Offerings: Operators can manage the services offered by the business, ensuring they are up-to-date and accurately reflected in the system.
 
