@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+Sure, here is the complete README file for the frontend part of your Customer Management System. You can copy and paste this into your `README.md` file on GitHub.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Customer Management System - Frontend
 
-In the project directory, you can run:
+This is the frontend part of the Customer Management System built using React. This application allows users to manage customers and services through a user-friendly interface.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://127.0.0.1:3000](http://127.0.0.1:3000) to view it in your browser.
+- [Project Description](#project-description)
+- [Features](#features)
+- [Screenshots](#screenshots)
+=- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Description
 
-### `npm test`
+The Customer Management System is designed to help businesses efficiently manage their customer and service information. It provides a comprehensive platform for user authentication, role-based access control, and CRUD operations for managing customer and service data. The system aims to streamline the process of customer management and improve service delivery.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Key Objectives
 
-### `npm run build`
+- **Centralized Management**: Provide a single platform to manage all customer and service data.
+- **Role-Based Access Control**: Ensure that different user roles have access to the specific functionalities they need.
+- **User-Friendly Interface**: Create an intuitive and responsive user interface to enhance the user experience.
+- **Automation**: Automate tasks such as sending email notifications to reduce manual effort.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### User Roles
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The system supports three types of user roles:
+- **Customer**: Can view and manage their profile and services.
+- **Manager**: Can manage customers and view all service details.
+- **Operator**: Can manage the services offered by the business.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Functionalities
 
-### `npm run eject`
+- **User Authentication and Authorization**: Secure login and registration system to ensure that only authorized users can access the system.
+- **Customer Management**: Managers can add, edit, and delete customer information. Customers can view and update their own profile.
+- **Service Management**: Operators can add, edit, and delete services. Customers can view services that are relevant to their customer type.
+- **Search and Filter**: Users can search and filter customers and services based on various criteria to quickly find the information they need.
+- **Email Notifications**: The system sends automated email notifications upon user registration to keep users informed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- User authentication and authorization
+- Role-based access control (Customer, Manager, Operator)
+- CRUD operations for customers and services
+- Email notifications upon user registration
+- Responsive design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Customer List
+The Customer List page displays a list of all customers, with options to edit or delete each customer. It also includes a search and sorting functionality.
 
-## Learn More
+![customer list](https://github.com/user-attachments/assets/ecaa2338-de9a-4341-827b-3b6ee3aeae5f)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Login Page
+The Login Page allows users to log in with their credentials. It includes links to the home and registration pages.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![login page](https://github.com/user-attachments/assets/fa190631-59b7-47bf-bc3f-353c0444840f)
 
-### Code Splitting
+### Manager Home Page
+The Manager Home Page provides an overview of customers and services. It allows managers to manage customers and view service details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![manager home page](https://github.com/user-attachments/assets/ebc9f447-141b-436b-8431-fe72720013b3)
 
-### Analyzing the Bundle Size
+### Private User Home Page
+The Private User Home Page displays information relevant to private users, including their services.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![privat user home page](https://github.com/user-attachments/assets/20797dad-0aea-4dc8-9352-055096e31dde)
 
-### Making a Progressive Web App
+### Register Page
+The Register Page allows new users to register by providing their details. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![register page](https://github.com/user-attachments/assets/9199836d-8b16-478e-875b-281418701983)
 
-### Advanced Configuration
+### Service List
+The Service List page displays a list of all services, with options to edit or delete each service. It also includes a filtering functionality based on customer type.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![service list](https://github.com/user-attachments/assets/8e56a75b-4562-448f-894c-d894871b642e)
 
-### Deployment
+### User Profile Page
+The User Profile Page displays the user's details and their associated services.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![user profile page](https://github.com/user-attachments/assets/d838432e-7ac7-423d-893e-e9e880220da4)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Project Structure
+
+The project structure is organized to maintain a clean and scalable codebase. Here is an overview of the main directories and files:
+
+### Directories
+
+- `src/components`: Contains reusable React components.
+  - Each component has its own folder containing the component file and its corresponding CSS file.
+  - Example: `Button`, `Header`, `Sidebar`, etc.
+
+- `src/pages`: Contains the different pages of the application.
+  - Each page represents a distinct view in the application.
+  - Example: `HomePage`, `LoginPage`, `RegisterPage`, `CustomerListPage`, etc.
+
+- `src/services`: Contains the service functions to interact with the backend API.
+  - These functions handle API calls and manage data fetching, posting, updating, and deleting.
+  - Example: `customerService.js`, `authService.js`, `serviceService.js`, etc.
+
+- `src`: Contains the main entry points for the React application.
+  - `App.js`: The main component that sets up the application routes and renders the navigation bar and page components.
+  - `index.js`: The entry point that renders the React application to the DOM.
+
+### Files
+
+- `App.js`: The main component that sets up the application routes and renders the navigation bar and page components.
+- `index.js`: The entry point that renders the React application to the DOM.
+- `App.css`: Contains global styles for the application.
+- `index.css`: Contains global styles and CSS resets.
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+
