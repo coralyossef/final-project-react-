@@ -43,8 +43,9 @@ The system supports three types of user roles:
 - User authentication and authorization
 - Role-based access control (Customer, Manager, Operator)
 - CRUD operations for customers and services
+- Services automatically configured according to the user type
 - Email notifications upon user registration
-- Responsive design
+  
 
 ## Screenshots
 
