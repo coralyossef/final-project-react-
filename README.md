@@ -51,40 +51,44 @@ The system supports three types of user roles:
 
 ## Screenshots
 
-### Customer List
-The Customer List page displays a list of all customers, with options to edit or delete each customer. It also includes a search and sorting functionality.
-
-![customer list](https://github.com/user-attachments/assets/ecaa2338-de9a-4341-827b-3b6ee3aeae5f)
 
 ### Login Page
 The Login Page allows users to log in with their credentials. It includes links to the home and registration pages.
 
 ![login page](https://github.com/user-attachments/assets/fa190631-59b7-47bf-bc3f-353c0444840f)
 
-### Manager Home Page
-The Manager Home Page provides an overview of customers and services. It allows managers to manage customers and view service details.
+### Register Page
+The Register Page allows new users to register by providing their details. 
 
-![manager home page](https://github.com/user-attachments/assets/ebc9f447-141b-436b-8431-fe72720013b3)
+![register page](https://github.com/user-attachments/assets/9199836d-8b16-478e-875b-281418701983)
+
 
 ### Private User Home Page
 The Private User Home Page displays information relevant to private users, including their services.
 
 ![privat user home page](https://github.com/user-attachments/assets/20797dad-0aea-4dc8-9352-055096e31dde)
 
-### Register Page
-The Register Page allows new users to register by providing their details. 
+### User Profile Page
+The User Profile Page displays the user's details and their associated services.
 
-![register page](https://github.com/user-attachments/assets/9199836d-8b16-478e-875b-281418701983)
+![user profile page](https://github.com/user-attachments/assets/d838432e-7ac7-423d-893e-e9e880220da4)
+
+### Manager Home Page
+The Manager Home Page provides an overview of customers and services. It allows managers to manage customers and view service details.
+
+![manager home page](https://github.com/user-attachments/assets/ebc9f447-141b-436b-8431-fe72720013b3)
+
+### Customer List
+The Customer List page displays a list of all customers, with options to edit or delete each customer. It also includes a search and sorting functionality.
+
+![customer list](https://github.com/user-attachments/assets/ecaa2338-de9a-4341-827b-3b6ee3aeae5f)
+
 
 ### Service List
 The Service List page displays a list of all services, with options to edit or delete each service. It also includes a filtering functionality based on customer type.
 
 ![service list](https://github.com/user-attachments/assets/8e56a75b-4562-448f-894c-d894871b642e)
 
-### User Profile Page
-The User Profile Page displays the user's details and their associated services.
-
-![user profile page](https://github.com/user-attachments/assets/d838432e-7ac7-423d-893e-e9e880220da4)
 
 
 
