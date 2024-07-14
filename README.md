@@ -1,7 +1,3 @@
-Sure, here is the complete README file for the frontend part of your Customer Management System. You can copy and paste this into your `README.md` file on GitHub.
-
----
-
 # Customer Management System - Frontend
 
 This is the frontend part of the Customer Management System built using React. This application allows users to manage customers and services through a user-friendly interface.
@@ -17,7 +13,8 @@ This is the frontend part of the Customer Management System built using React. T
 
 ## Project Description
 
-The Customer Management System is designed to help businesses efficiently manage their customer and service information. It provides a comprehensive platform for user authentication, role-based access control, and CRUD operations for managing customer and service data. The system aims to streamline the process of customer management and improve service delivery.
+The Customer Management System is designed to streamline customer and service management for businesses. It includes features for user authentication, role-based access control, and CRUD operations for managing customer and service data. The main goal is to enhance the customer management process and improve service delivery.
+
 
 ### Key Objectives
 
@@ -29,9 +26,9 @@ The Customer Management System is designed to help businesses efficiently manage
 ### User Roles
 
 The system supports three types of user roles:
-- **Customer**: Can view and manage their profile and services.
-- **Manager**: Can manage customers and view all service details.
-- **Operator**: Can manage the services offered by the business.
+- **Customer**: Manage their profile and view relevant services.
+- **Manager**: Manage customers and view all service details.
+- **Operator**: Manage the services offered by the business.
 
 ### Functionalities
 
